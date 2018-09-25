@@ -1,0 +1,23 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xl {
+    @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) and (max-width: #{map-get($breakpoints, xl)-1}) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) and (max-width: #{map-get($breakpoints, lg)-1}) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) and (max-width: #{map-get($breakpoints, md)-1}) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: #{map-get($breakpoints, xs)}) {
+      @content;
+    }
+  }
+}
