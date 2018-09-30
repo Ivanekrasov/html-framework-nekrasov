@@ -8,12 +8,6 @@
   margin: 0 0 10px 0;
   text-align: left;
   margin-bottom: 20px;
-  cursor: pointer;
-  }
-  &:focus{
-    border: 1px solid black;
-    outline: none;
-  }
   &--disabled{
     background: white;
     border: 1px solid white;
@@ -21,16 +15,10 @@
   &--readonly{
     background: blue;
     border: 1px solid blue;
-    &:focus{
-      border: 1px solid blue;
-    }
   }
   &--error{
     background: red;
     border: 1px solid red;
     color: red;
-    &:focus{
-      border: 1px solid red;
-    }
   }
 }

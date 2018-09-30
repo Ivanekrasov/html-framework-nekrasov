@@ -1,0 +1,32 @@
+.textarea{
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  background: lightblue;
+  border: 1px solid black;
+  color: black;
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+  text-align: left;
+  font-family: Arial;
+  resize: none;
+  margin-bottom: 20px;
+  &:focus{
+    border: 1px solid navy;
+    outline: none;
+  }
+  &--disabled{
+    background: lighten(lightgrey, 30%);
+    border: 1px solid lightgrey;
+  }
+  &--readonly{
+    background: lightgrey;
+    border: 1px solid lightgrey;
+  }
+  &--error{
+    background: red;
+
+  }
+}

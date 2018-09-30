@@ -1,0 +1,17 @@
+.radio{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  &--disabled{
+    .radio{
+      background: lightgrey;
+    }
+  }
+  &--error{
+        background: red;
+      }
+  }
+}

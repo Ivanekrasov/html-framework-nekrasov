@@ -1,0 +1,11 @@
+.title{
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  &--big{
+    font-size: 36px;
+  }
+  &--small{
+    font-size: 16px;
+  }
+}
